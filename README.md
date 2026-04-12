@@ -14,150 +14,70 @@ O objetivo do projeto é propor uma ideia de um equipamento para ser usado para 
 
 # INSTRUÇÕES DE INSTALAÇÃO E EXECUÇÃO
 
-Todo o código-fonte do AMV VIRTUAL está inserida no arquivo AMV_Virtual_Definitivo;
+Todo o código-fonte do AMV VIRTUAL está inserida no arquivo AMV_Virtual_Definitivo no link do github (https://github.com/wilkeamerico/AMV_Virtual_Definitivo). Para instalar o código-fonte, baixar o arquivo no Github e compilar diretamente no VSCode já com a extensão do Raspberry PI PICO instalado e siga os seguintes passos:  
 
-Para instalar o código-fonte, baixe o arquivo no github e compilar no VS Code. 
-Em seguida, 
+ - Compilar projeto (COMPILE PROJECT);
 
- - Ativar BOOTSEL 
-
----
-[![License: CERN-OHL-S v2.0](https://img.shields.io/badge/License-CERN--OHL--S%20v2.0-blue.svg)](https://cern.ch/cern-ohl 
-
-## 🌟 What’s new in Version 7.0
-
-✨ BitDogLab V7 improves upon the solid foundation of V6 with the following updates:
-
-✅ Cost optimization: design adjustments to keep fabrication cost under US$ 25 (≈ R$ 250 in Brazil, including taxes).
-
-✅ Support for Raspberry Pi Pico 2 (RP2350) with dual-core ARM and RISC-V architecture.
-
-✅ Enhanced LED matrix: 5×5 WS2812B RGB array, now using smaller LEDs for better integration.
-
-✅ Display connection updated: OLED now connected to I²C pins GPIO2 (SDA) and GPIO3 (SCL).
-
-✅ New Battery Management System (BMS): integrated INA226 for easy monitoring and control.
-
-✅ Flexible display options: support for OLED modules with 128×64 or 128×128 pixel resolution, expanding visualization capabilities.
-
-✅ Additional input control: inclusion of a third button (A, B, and C), enabling more interactive applications.
-
-✅ Modular microcontroller socket: a new socketed design for the MCU module, allowing future upgrades and simplified maintenance.
-
----
-
-## 💻 How to Program BitDogLab
-
-BitDogLab supports multiple programming environments, ranging from visual block-based tools for beginners to professional C/C++ development for advanced users.
-Below is a step-by-step guide to start programming your board easily using Blockly.
-
-### 🧩 Programming with Blockly (Visual Blocks)
-
-Blockly is the easiest way to get started with BitDogLab — ideal for students and beginners learning programming logic and embedded systems.
-You can access it directly online, without installing anything:
-
-👉 Blockly for BitDogLab:
-https://bitdoglab-blocos.github.io/BIPES-BITDOGLAB/ui/
-
-Steps to use Blockly:
-
-1) Connect your BitDogLab to your computer using a USB cable.
-
-2) Open the link above in your browser (preferably Chrome or Edge).
-
-3) Select the serial port corresponding to your board.
-
-4) Drag and connect the programming blocks to create your program.
-
-5) Click on “Run” or “Upload” to send the program to your BitDogLab.
-
-⚠️ Important:
-If your board already contains a file named main.py in its internal memory, delete it before using Blockly.
-The presence of this file can prevent Blockly from communicating properly with the microcontroller.
-
-Tip:
-
-Blockly automatically generates MicroPython code, which can also be viewed and modified in the Thonny IDE if you prefer text-based programming.
-
-###  Programming with MicroPython 
-
-After experimenting with Blockly, you can easily migrate to MicroPython using Thonny IDE with the examples available in the /Firmware/examples/ folder of this repository.
-https://gitlab.unicamp.br/fabiano/bitdoglab-v7/-/tree/main/Firmware/examples?ref_type=heads#bitdoglab-micropython-examples
-
-#### 🧰 Tools & Environment
-MicroPython with Thonny IDE
-
-Steps:
-
-Flash/update MicroPython firmware on Pico/Pico 2. OBS: Normaly you already received a BitDogLab with a the firmware flashed. 
-
-Connect BitDogLab via USB, select the port under Tools → Interpreter.
-
-Upload the generated script (main.py or similar).
-
-If using Blockly, remove main.py first (it can block communication).
+<img width="1268" height="381" alt="image" src="https://github.com/user-attachments/assets/8bce3284-6f9d-43f2-9abc-612ca7abe9cb" />
 
 
-### Quick Guide — Programming BitDogLab with AI (using the BIH)
+ - Ativar BOOTSEL e em seguida o RESET no BITDOGLAB e clicar em RUN PROJECT (USB). Quando carreger em 100%, é por que o programa foi carregado com sucesso e já pode usar com sucesso!
 
-The simplest workflow to generate code (MicroPython or C/C++) with the help of Artificial Inteligence models using the Hardware Information Database (BIH) — a text file describing the BitDogLab hardware connection is explained bellow:
-
-
-🔎 What is the BIH
-
-The BIH [Hardware Bank Database (BIH)](https://docs.google.com/document/d/13-68OqiU7ISE8U2KPRUXT2ISeBl3WPhXjGDFH52eWlU/edit?usp=sharing)  is a plain text file containing the pinouts and peripherals of the board/project. It gives technical context so that an LLM (Large Language Model) can write correct code for your BitDogLab, avoiding pin/address mismatches.
-
-#### AI Workflow (Step-by-Step)
-
-1) Open the BIH from the link above.
-
-2) Open your AI assistant (e.g., ChatGPT) and paste the BIH before requesting code.
-
-3) Use a task prompt specifying: target language (MicroPython or C/C++), desired functionality, and constraints. Start with simple tasks.
-
-4) Ask for complete, testable code (with main() or a full script and comments).
-
-5) Iterate: send any compilation/runtime errors back to the AI, always including the BIH and the error log.
+<img width="1311" height="387" alt="image" src="https://github.com/user-attachments/assets/5ba0fd9d-5cf1-40e0-9b08-4f9f6d2910b9" />
 
 
-## 📂 Repository Structure
-```
-under construction ...
-```
+- Logo quando carregado vai aparecer na tela OLED do Bitdoglab a seguinte mensagem, significando que o programa foi gravado;
+  
+  AMV VIRTUAL
+  EMBARCATECH
+  BY WILKE
 
+Para usar o AMV VIRTUAL de forma como controle remoto, siga da seguinte forma:
+- APERTAR BOTÃO A: ACENDE SINAL VERDE E SINALIZA QUE O AMV ESTÁ EM "NORMAL" (QUANDO A AGULHA DO AMV ESTÁ NO MESMO SENTIDO DO TRILHO), COM DISPLAY OLED COM SETA PARA DIREITA E EMITE SINAL SONORO;
+- APERTAR BOTÃO B: DESLIGA LED VERDE E ACENDE SINAL VERMELHA E SINALIZA QUE O AMV ESTÁ EM "REVERSO" (QUANDO A AGULHA DO AMV ESTÁ NO SENTIDO CONTRÁRIO A DO TRILHO), COM DISPLAY OLED COM SETA PARA ESQUERDA E TAMBÉM EMITE SINAL SONORO;
 
----
+Para usar de forma remota com acesso a internet (WEB),siga da seguinte forma:
+- Ir ao SERIAL MONITOR e clicar em INICIAR MONITORAMENTO;
 
+<img width="1041" height="311" alt="image" src="https://github.com/user-attachments/assets/5318239a-7f5e-49f4-b916-d47f2c50e2e1" />
 
-## 🛠️ Hardware Design Files (Open Hardware)
+- Em seguida clicar no botão de RESET do bitdoglab. Fazendo isso aparece a seguinte mensagem:
 
-This repository holds **open-source design files** for BitDogLab V7, released under the **CERN Open Hardware Licence v2 – Strongly Reciprocal (CERN-OHL-S)**.  
-All files can be freely **copied, manufactured, assembled, and improved** by the community, in alignment with open hardware principles.  
+<img width="1301" height="415" alt="image" src="https://github.com/user-attachments/assets/7fce8e8c-7d05-4f77-afa1-29e395e06e42" />
 
-### 📂 Structure of hardware files
-```
-hardware/
-├── kicad/
-│ ├── bitdoglab/ → Schematics, PCB layout and gerbers (DIY)
-│ ├── bitdoglabsmd/ → Schematics, PCB layout and gerbers (SMD)
-│ └── libs/ → Symbols, footprints and 3D models
-│
-└── docs/
-├── BOM/ → Bill of Materials (.xlsx and .csv)
-└── fabrication/ → Panelization, pick-and-place, gerber and drill
+AQUI VAI GERAR O NÚMERO DO IP QUE VAI USÁ-LA PARA ACESSAR NA PÁGINA WEB.
+OBS! ANTES DE COMPILAR, PRIMEIRO CADASTRAR NO CÓDIGO-FONTE O WIFI (SSID E PASS), CONFORME EXEMPLO ABAIXO:
 
-```
+<img width="494" height="103" alt="image" src="https://github.com/user-attachments/assets/72182035-032d-486d-965b-d0e879955072" />
 
-### 🔑 Key Components – BitDogLab V7
+ - A página virtual vai aparecer desta forma:
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b74629a7-2464-4dde-ab20-60d91bb5c4e6" />
+
+Dessa forma você consegue acessar o AMV como se tivesse acessando dentro do sistema logado no CCO e pode ser executado da mesma forma como se fosse feito externo. Na própria tela você ainda pode identificar se o LED VERDE ou LED VERMELHO vai estar ligado, conforme exemplo abaixo:
+
+<img width="1030" height="480" alt="image" src="https://github.com/user-attachments/assets/38451c61-b5c1-4eff-81f0-9a59d7406e47" />
+
+OBS: Todo o registro do de ligação dos LEDs REMOTO e LIGADO também vai estar registrado no SERIAL MONITOR como registro do movimento do AMV.
+
+<img width="708" height="234" alt="image" src="https://github.com/user-attachments/assets/36a4c4b5-a0f6-4ddb-b2ea-75438e3ff198" />
+
+O VÍDEO DE DEMONSTRAÇÃO COMPLETA PODE SER ACESSADO NA PÁGINA WEB:
+
+ 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### PRINCIPAIS COMPONENTES PARA A INSTALAÇÃO DO AMV VIRTUAL – BitDogLab V7 ###
 
 - **MCU board:** Raspberry Pi Pico H/W or Pico 2 (RP2350)  
 - **LEDs:** RGB LED (common cathode) + 5×5 WS2812B matrix  
 - **Inputs:** Buttons A/B + Reset, analog joystick (VRx/VRy + SW)  
 - **Audio:** Passive buzzers A and B (stereo capable)  
-- **Display:** OLED 128×64 via I²C (GPIO2 = SDA, GPIO3 = SCL)  
-- **Sensing:** Electret or MEMS microphone (analog)  
-- **Power:** USB 5V, battery charger, **INA226** for monitoring (BMS)  
-- **Expansion:** IDC header exposing GPIOs, I²C/SPI/UART, 3V3/5V/GND  
-
+- **Display:** OLED 128×64 via I²C (GPIO2 = SDA, GPIO3 = SCL)
+- **Power:** USB 5V, battery charger, **INA226** for monitoring (BMS)
+- **PÁGINA WEB**
+  
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+APROVEITE!
 
 
