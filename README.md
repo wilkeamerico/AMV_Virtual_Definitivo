@@ -80,6 +80,7 @@ OBS: Todo o registro do de ligação dos LEDs REMOTO e LIGADO também vai estar 
 <img width="708" height="234" alt="image" src="https://github.com/user-attachments/assets/36a4c4b5-a0f6-4ddb-b2ea-75438e3ff198" />
 
 O VÍDEO DE DEMONSTRAÇÃO COMPLETA PODE SER ACESSADO NA PÁGINA WEB:
+https://www.youtube.com/watch?v=270NCCUAxH8
 
  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
