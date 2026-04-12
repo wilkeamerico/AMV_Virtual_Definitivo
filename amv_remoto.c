@@ -32,8 +32,8 @@
 #define OLED_ADDR       0x3C
 
 // --- CONFIGURAÇÕES DE REDE ---
-#define WIFI_SSID       "GRAFNET"
-#define WIFI_PASS       "osenhoremeupastor1"
+#define WIFI_SSID       "SEU WIFI"
+#define WIFI_PASS       "sua senha"
 
 // --- GLOBAIS DE SISTEMA ---
 PIO pio_matrix = pio0;
