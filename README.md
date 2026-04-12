@@ -1,8 +1,22 @@
 # AMV VIRTUAL
 
-Um projeto de hardware que mistura um controle remoto que controla um AMV (Aparelho de Mudança de Via), que é equipamento usado para mover uma via ferroviária de um lado para o outro de forma remota e online, sem precisar, necessariamente se deslocar a um pátio de manobras de trens e composições ferroviárias ou uma via ferrea para mover de forma manual (SALVO SE HOUVER PROBLEMAS DE QUEDA DE ENERGIA QUE EXIGEM A MOVIMENTAÇÃO MANUAL). Este equipamento também pode ser utilizada de forma virtual e remota diretamente do CCO (Centro de Controle Operacional), através do comando de botões que simulam um acionamento do AMV remotamente. A proposta é criar uma forma de movimentação ferroviária sem precisar acionar equipes de manutenção de via permanente para acionar manualmente, além de criar camadas de segurança em vias ferroviarias sem expor o operador aos riscos de acidentes.
+# APRESENTAÇÃO
+Um projeto de hardware de código aberto desenvolvido para promover uma operação ferroviária de forma segura e eficiente. O mesmo projeto faz parte do projeto final do Programa de capacitação em Sistemas Embarcados (EMBARCATECH) - segundo ciclo 2026.
 
-O objetivo deste projeto é recriar o funcionamento 
+
+# O AMV VIRTUAL
+
+O AMV Virtual é uma ferramenta de hardware e software que simula o controle e monitoramento da mudança de vias ferreas através de um AMV (Aparelho de Mudança de Via). Ele integra o controle remoto físico que controla o AMV e uma representação simples do controle e monitoramento virtual, simulando o controle do movimento dentro do CCO (Centro de Controle Operacional).
+
+# OBJETIVO DO AMV VIRTUAL
+
+O objetivo do projeto é propor uma ideia de um equipamento para ser usado para mover uma via ferroviária de um lado para o outro de forma remota sem precisar, necessariamente, se deslocar a um pátio de manobras e movimentar de forma manual AMVs espalhados em diversos pontos, as vezes sob condições adversas (SALVO SE HOUVER PROBLEMAS DE QUEDA DE ENERGIA QUE, NESTE CASO EM ESPECÍFICO EXIGEM A MOVIMENTAÇÃO MANUAL). Este equipamento também pode ser utilizada de forma virtual e remotamente, diretamente no CCO. A proposta é criar uma forma de movimentação ferroviária sem precisar acionar equipes de manutenção de via permanente para acionar manualmente, além de criar camadas de segurança em vias ferroviarias sem expor o operador aos riscos de acidentes e revolucionar tecnologia ferroviária.
+
+# INSTRUÇÕES DE INSTALAÇÃO E EXECUÇÃO
+
+Todo o código-fonte do AMV VIRTUAL está 
+
+ - Ativar BOOTSEL 
 
 ---
 [![License: CERN-OHL-S v2.0](https://img.shields.io/badge/License-CERN--OHL--S%20v2.0-blue.svg)](https://cern.ch/cern-ohl 
@@ -142,49 +156,5 @@ hardware/
 - **Power:** USB 5V, battery charger, **INA226** for monitoring (BMS)  
 - **Expansion:** IDC header exposing GPIOs, I²C/SPI/UART, 3V3/5V/GND  
 
-### 📐 Hardware Schematic
-
-The complete **schematics of BitDogLab V7** are available in this [**document**](https://docs.google.com/document/d/1cR74ubS8tIO2sSQk1Hf8aKo57Ta3R8EJL4mGiqV2mH0/edit?usp=sharing). .  
-They describe the entire circuit, including MCU pins, power supply, LEDs, buzzers, joystick, display, sensors, and connectors.
-
-- **Fabrication Files (version 7) with PCB and assembly with SMD componentes:** [**Gerber + BOM + Pick Place**](https://drive.google.com/drive/folders/1TGEBqiHnaR470X9izp0-9XtS-pPj8GxW?usp=sharing
-)
 
 
-> The schematic is the starting point for anyone wishing to understand, replicate, or modify BitDogLab.  
-> It ensures **full transparency** in the design, reinforcing the open hardware philosophy of this project.
-
-
-### 📑 Bill of Materials (BOM)
-
-- **Spreadsheet (Google Sheets):** [BOM](https://docs.google.com/spreadsheets/d/1lPjkUmOSgNfBfdC2lzMRuLAa2dZAN5wuEols-8MtYGg/edit?usp=sharing)  
-
-
----
-
-## 📚 Hardware Database
-
-
-- **Português**: [Banco de Informação de Hardware (BIH)](https://docs.google.com/document/d/13-68OqiU7ISE8U2KPRUXT2ISeBl3WPhXjGDFH52eWlU/edit?usp=sharing)  
-
----
-
-## 📜 License
-
-This project is licensed under:  
-- **CERN Open Hardware Licence v2 – Strongly Reciprocal (CERN-OHL-S)** for hardware  
-- **MIT** for software and firmware  
-
----
-
-## 🤝 Sponsors & Support
-
-- **IEEE-EDS**: STEM outreach program  
-- **CNPq – INCT Namitec**  
-
----
-
-## 👨‍🏫 Authors and Acknowledgment
-
-- **Prof. Dr. Fabiano Fruett** – Project coordination and development  
-- Contributors: students and collaborators from **Escola 4.0 / FEEC – Unicamp** 
