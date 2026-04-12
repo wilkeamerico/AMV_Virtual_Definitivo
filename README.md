@@ -31,21 +31,27 @@ Todo o código-fonte do AMV VIRTUAL está inserida no arquivo AMV_Virtual_Defini
   AMV VIRTUAL
   EMBARCATECH
   BY WILKE
-
-![WhatsApp Image 2026-04-12 at 00 11 12](https://github.com/user-attachments/assets/e492b7dd-31f7-4622-a841-442ed7367bd0)
-![WhatsApp Image 2026-04-11 at 22 30 41](https://github.com/user-attachments/assets/5b1b6193-05a6-4305-bdfe-59ae541198f9)
-![WhatsApp Image 2026-04-11 at 23 08 25](https://github.com/user-attachments/assets/ca7d782b-d008-47d3-8396-68fa4bac13b3)
-![WhatsApp Image 2026-04-11 at 23 31 08](https://github.com/user-attachments/assets/86e9b9c4-289e-4122-bbb3-01ffe804406e)
-![WhatsApp Image 2026-04-12 at 00 04 30](https://github.com/user-attachments/assets/abb4e3b3-a394-4611-a6f3-46296fa14c29)
-![WhatsApp Image 2026-04-12 at 00 04 30 (1)](https://github.com/user-attachments/assets/cf96dba1-100b-4d15-a8c4-2763096b6358)
-![WhatsApp Image 2026-04-11 at 22 30 41](https://github.com/user-attachments/assets/9570b798-c055-422c-8a34-7148cb605cc9)
+  
 ![WhatsApp Image 2026-04-11 at 22 30 41](https://github.com/user-attachments/assets/d7eb6fbc-d243-47b0-a0d1-a31fa54300fb)
+
+![WhatsApp Image 2026-04-12 at 00 04 30](https://github.com/user-attachments/assets/abb4e3b3-a394-4611-a6f3-46296fa14c29)
+
+
+
+
+![WhatsApp Image 2026-04-12 at 00 04 30 (1)](https://github.com/user-attachments/assets/cf96dba1-100b-4d15-a8c4-2763096b6358)
+
 
   
 
 Para usar o AMV VIRTUAL de forma como controle remoto, siga da seguinte forma:
 - APERTAR BOTÃO A: ACENDE SINAL VERDE E SINALIZA QUE O AMV ESTÁ EM "NORMAL" (QUANDO A AGULHA DO AMV ESTÁ NO MESMO SENTIDO DO TRILHO), COM DISPLAY OLED COM SETA PARA DIREITA E EMITE SINAL SONORO;
+
+![WhatsApp Image 2026-04-12 at 00 11 12](https://github.com/user-attachments/assets/e492b7dd-31f7-4622-a841-442ed7367bd0)
+
 - APERTAR BOTÃO B: DESLIGA LED VERDE E ACENDE SINAL VERMELHA E SINALIZA QUE O AMV ESTÁ EM "REVERSO" (QUANDO A AGULHA DO AMV ESTÁ NO SENTIDO CONTRÁRIO A DO TRILHO), COM DISPLAY OLED COM SETA PARA ESQUERDA E TAMBÉM EMITE SINAL SONORO;
+
+![WhatsApp Image 2026-04-11 at 23 31 08](https://github.com/user-attachments/assets/86e9b9c4-289e-4122-bbb3-01ffe804406e)
 
 Para usar de forma remota com acesso a internet (WEB),siga da seguinte forma:
 - Ir ao SERIAL MONITOR e clicar em INICIAR MONITORAMENTO;
@@ -80,16 +86,13 @@ O VÍDEO DE DEMONSTRAÇÃO COMPLETA PODE SER ACESSADO NA PÁGINA WEB:
 
 ### PRINCIPAIS COMPONENTES PARA A INSTALAÇÃO DO AMV VIRTUAL – BitDogLab V7 ###
 
-- **MCU board:** Raspberry Pi Pico H/W or Pico 2 (RP2350)  ![WhatsApp Image 2026-04-11 at 22 30 41](https://github.com/user-attachments/assets/1f6e08a6-7f4f-449e-b730-7ed17b6aaa84)
-
+- **MCU board:** Raspberry Pi Pico H/W or Pico 2 (RP2350)
 - **LEDs:** RGB LED (common cathode) + 5×5 WS2812B matrix  
 - **Inputs:** Buttons A/B + Reset, analog joystick (VRx/VRy + SW)  
 - **Audio:** Passive buzzers A and B (stereo capable)  
 - **Display:** OLED 128×64 via I²C (GPIO2 = SDA, GPIO3 = SCL)
 - **Power:** USB 5V, battery charger, **INA226** for monitoring (BMS)
 - **PÁGINA WEB**
-  
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-APROVEITE!
+
 
 
