@@ -14,7 +14,10 @@ O objetivo do projeto é propor uma ideia de um equipamento para ser usado para 
 
 # INSTRUÇÕES DE INSTALAÇÃO E EXECUÇÃO
 
-Todo o código-fonte do AMV VIRTUAL está 
+Todo o código-fonte do AMV VIRTUAL está inserida no arquivo AMV_Virtual_Definitivo;
+
+Para instalar o código-fonte, baixe o arquivo no github e compilar no VS Code. 
+Em seguida, 
 
  - Ativar BOOTSEL 
 
